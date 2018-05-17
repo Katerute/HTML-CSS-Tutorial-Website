@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>HTML Tutorial</title>
+<link rel="stylesheet" type="text/css" href="../Style/tutorialWeb.css"/><!--CSS file-->
+</head>
+
+<!--BODY-->
+<body>
+<div id="main">
+
+<!--LIST OF CONTENT - NAVIGATION BAR-->
+<div id="navigation_bar">
+<div class="dropdown">
+<button class="dropbtn">HTML</button>
+<div class="dropdown-content">
+<a href="html_beforeStart.html">Before You Get Started</a>
+<a href="html_intro.html">HTML Introduction</a>
+<a href="html_nestedEl.html">Nested Elements</a>
+<a href="html_tags.html">Tags</a>
+<a href="html_attr.html">HTML Attributes</a>
+<a href="html_inline.html">Inline Tags</a>
+<a href="html_tables.html">HTML Tables</a>
+<a href="html_spChar.html">HTML Special Characters</a>
+<a href="html_grouping.html">Structural Grouping</a>
+</div><!--.dropdown-content-->
+</div><!--.dropdown-->
+
+<div class="dropdown2">
+<button class="dropbtn">CSS <i class="fa fa-caret-down"></i></button>
+<div class="dropdown-content">
+<a href="css_intro.html">CSS Introduction</a>
+<a href="css_syntax.html">CSS Syntax</a>
+<a href="css_boxModel.html"> Box Model</a>
+<a href="css_colours.html">Colours</a>
+<a href="css_backgrounds.html">Backgrounds</a>
+</div><!--.dropdown-content-->
+</div><!--.dropdown2-->
+</div><!--#navigation_bar-->
+
+<!--LIST OF CONTENT - SIDEBAR-->
+<ul id="navigation_sidebar">
+<li class="htmlcontent"><b>HTML</b></li>
+<li><a href="html_beforeStart.html">Before You Get Started</a></li>
+<li><a href="html_intro.html">HTML Introduction</a></li>
+<li><a href="html_nestedEl.html">Nested Elements</a></li>
+<li><a href="html_tags.html">Tags</a></li>
+<li><a href="html_attr.html">HTML Attributes</a></li>
+<li><a href="html_inline.html">Inline Tags</a></li>
+<li><a href="html_tables.html">HTML Tables</a></li>
+<li><a href="html_spChar.html">Special Characters</a></li>
+<li><a href="html_grouping.html">Structural Grouping</a></li>
+<li><a href="html_quiz.html">HTML Quiz</a><br/></li>
+<li class="htmlcontent"><b>CSS</b></li>
+<li><a href="css_intro.html">CSS Introduction</a></li>
+<li><a href="css_syntax.html">CSS Syntax</a></li>
+<li><a href="css_boxModel.html"> Box Model</a></li>
+<li><a href="css_colours.html">Colours</a></li>
+<li><a href="css_backgrounds.html">Backgrounds</a></li>
+</ul>
+
+<a href="html_tags.html"><img class= "back" src="../Resources/arrowLeft.png" alt="Arrow pointing left"/></a><!--link to the previous page-->
+
+<!--NEW TILE-->
+<h1>HTML Attributes</h1>
+<p>To specify additional properties and/or behaviour for the HTML element use <span class="attr"><strong>attributes</strong></span>.</p>
+<ul id="ruleListLeft">
+<li>Attributes are always declared in the opening tag.</li>
+<li>Self-closing attributes tags can also contain attributes. </li>
+<li>Attributes come as name/value pairs: name = “value”.</li>
+</ul>
+<h2 id="html_attr_1">Links and the <span class="attr">href</span> attribute</h2>
+<p>To create a link to an external web page use the <span class="tag">&#60;a&#62;</span> tag. </p>
+<p>The link’s destination address is additional information which is specified using <span class="attr">href</span> attribute.</p>
+ <div id="attrRule">
+ <p><span class="attr">href</span> = “URL address”</p>
+<img class="lineLong" src="../Resources/href.png" alt = "Example of using links"/>
+</div><!--attrRule-->
+<p><br/>Use a full web address (an absolute link) to go to a different web page.</p>
+<p>To access any point on the same web page use a local link which is specified with a relative URL (no need to add "http://www. ...").</p>
+
+<img class="wideImage" src="../Resources/hrefExample.png" alt = "Example of using links WEB"/>
+
+<hr/>
+<h2 id="html_attr_2">Images and the <span class="attr">scr</span>, <span class="attr">alt</span>, <span class="attr">width</span> and <span class="attr">height</span> attributes</h2>
+<p>You can define HTML images with the <span class="tag">&#60;img&#62;</span> tag.</p>
+<p>Additional properties for the image are:</p>
+<ul>
+<li>the image source file ( <span class="attr">src</span> attribute ) <br/>
+<img class = "line" src="../Resources/img.png" alt="src attribute"/>
+</li>
+<li>
+size ( <span class="attr">width</span> and <span class="attr">height</span> attributes specify the width and height of the image in pixels)<br/>
+<img  class="lineLong" src="../Resources/img2.png" alt="width and height attributes"/>
+<img class="wideImage" src="../Resources/imageExists.png" alt="Example of &#60;img&#62;"/>
+</li>
+<li>
+alternative text when an image cannot be displayed ( <span class="attr">alt</span> attribute )<br/>
+<img class="lineVeryLong" src="../Resources/img3.png" alt="alt attribute"/>
+<img class="wideImage" src="../Resources/noImage.png" alt="example of 'picture not found'"/>
+</li>
+</ul>
+<hr/>
+<h2>The <span class="attr">title</span>, <span class="attr">style</span>, <span class="attr">class</span> and <span class="attr">id</span> attributes</h2>
+<p>The following attributes can be applied to any tag in <span class="bodyWord">&#60;body&#62;</span> . However, most of them are used for CSS styling and, therefore, will be examined in more detail later:</p>
+<ul>
+<li><span class="attr">title</span> – creates a tooltip for the text specified in value of this attribute and will be displayed when the mouse is over the element.<br/>
+<img class="shrink" src="../Resources/titleAttribute.png" alt="title atribute"/>
+<br/></li>
+<li><span class="attr">style</span> - attribute provides inline CSS style rules to specify the styling of an element (color, size, font)</li>
+<li><span class="attr">class</span> - attribute specifies the class for the element (useful for CSS) <a href="html_grouping.html">More...</a></li>
+<li><span class="attr">id</span> - attribute is used to uniquely identify the element (useful for CSS) <a href="html_grouping.html">More...</a></li>
+</ul>
+<a href="html_inline.html"><img  class= "next" src="../Resources/arrowRight.png" alt="Arrow pointing right"/></a><!--link to the next section-->
+
+</div><!--main-->
+</body><!--BODY-->
+</html>

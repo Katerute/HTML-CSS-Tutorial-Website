@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>HTML Tutorial</title>
+<link rel="stylesheet" type="text/css" href="../Style/tutorialWeb.css"/><!--CSS file-->
+</head>
+
+<!--BODY-->
+<body>
+<div id="main">
+
+<!--LIST OF CONTENT - NAVIGATION BAR-->
+<div id="navigation_bar">
+<div class="dropdown">
+<button class="dropbtn">HTML</button>
+<div class="dropdown-content">
+<a href="html_beforeStart.html">Before You Get Started</a>
+<a href="html_intro.html">HTML Introduction</a>
+<a href="html_nestedEl.html">Nested Elements</a>
+<a href="html_tags.html">Tags</a>
+<a href="html_attr.html">HTML Attributes</a>
+<a href="html_inline.html">Inline Tags</a>
+<a href="html_tables.html">HTML Tables</a>
+<a href="html_spChar.html">HTML Special Characters</a>
+<a href="html_grouping.html">Structural Grouping</a>
+</div><!--.dropdown-content-->
+</div><!--.dropdown-->
+
+<div class="dropdown2">
+<button class="dropbtn">CSS <i class="fa fa-caret-down"></i></button>
+<div class="dropdown-content">
+<a href="css_intro.html">CSS Introduction</a>
+<a href="css_syntax.html">CSS Syntax</a>
+<a href="css_boxModel.html"> Box Model</a>
+<a href="css_colours.html">Colours</a>
+<a href="css_backgrounds.html">Backgrounds</a>
+</div><!--.dropdown-content-->
+</div><!--.dropdown2-->
+</div><!--#navigation_bar-->
+
+<!--LIST OF CONTENT - SIDEBAR-->
+<ul id="navigation_sidebar">
+<li class="htmlcontent"><b>HTML</b></li>
+<li><a href="html_beforeStart.html">Before You Get Started</a></li>
+<li><a href="html_intro.html">HTML Introduction</a></li>
+<li><a href="html_nestedEl.html">Nested Elements</a></li>
+<li><a href="html_tags.html">Tags</a></li>
+<li><a href="html_attr.html">HTML Attributes</a></li>
+<li><a href="html_inline.html">Inline Tags</a></li>
+<li><a href="html_tables.html">HTML Tables</a></li>
+<li><a href="html_spChar.html">Special Characters</a></li>
+<li><a href="html_grouping.html">Structural Grouping</a></li>
+<li><a href="html_quiz.html">HTML Quiz</a><br/></li>
+<li class="htmlcontent"><b>CSS</b></li>
+<li><a href="css_intro.html">CSS Introduction</a></li>
+<li><a href="css_syntax.html">CSS Syntax</a></li>
+<li><a href="css_boxModel.html"> Box Model</a></li>
+<li><a href="css_colours.html">Colours</a></li>
+<li><a href="css_backgrounds.html">Backgrounds</a></li>
+</ul>
+
+<a href="html_spChar.html"><img class= "back" src="../Resources/arrowLeft.png" alt="Arrow pointing left"/></a><!--link to the previous page-->
+<h1>Structural grouping</h1>
+<p>Group related parts of a document together to create style and interactivity provided by CSS and JavaScript.</p>
+
+<h2>How to group elements?</h2>
+<ul>
+<li>Use <span class="tag">&#60;div&#62;</span> and <span class="tag">&#60;span&#62;</span> tags to enclose related content at document level (as a container for other HTML elements). <br/>Content of these containers can be treated as a single element.</li>
+<li>Use <span class="attr">class</span> and <span class="attr">id</span> attributes to identify a group of elements.</li>
+</ul>
+<hr/>
+<h2>The difference between  <span class="tag">&#60;div&#62;</span> and <span class="tag">&#60;span&#62;</span> tags</h2>
+
+<div class="row">
+  <div class="column">
+   <p class="push30"><span class="tag">&#60;div&#62;</span></p>
+	<ul>
+		<li>defines a <b>block-level</b> section</li>
+		<li>works as a container for <b>other HTML elements</b></li>
+	</ul>
+	<p><img class="wideImage" src="../Resources/div.png" alt="&#60;div&#62; example"/></p>
+	
+  </div><!--column-->
+  <div class="column">
+     <p class="push30"><span class="tag">&#60;span&#62;</span></p>
+	<ul>
+		<li>defines an <b>inline</b> fragment of content</li>
+		<li>works as a container for <b>some text</b></li>
+	</ul>
+	<img class="example2" src="../Resources/span.png" alt="&#60;span&#62; example"/>
+  </div><!--column-->
+</div><!--row-->
+<hr/>
+<h2><span class="attr">class</span> and <span class="attr">id</span> attributes</h2>
+
+<div class="row">
+  <div class="column">	
+	<p class="push50"><span class="attr">class</span></p>
+	<ul>
+		<li><span class="tag">&#60;div&#62;</span> and <span class="tag">&#60;span&#62;</span> tags can be grouped by adding the <span class="attr">class</span> attribute. </li>
+		<li>Containers with the same value of <span class="attr">class</span> are associated together. </li>
+		<li><span class="attr">class</span> value can be reused within the document</li>
+		<li>A tag can be in more than one <span class="attr">class</span>.</li>
+	</ul>
+<img class="lineVeryLong" src="../Resources/class.png" alt="class attribute example"/>
+  </div><!--column-->
+  <div class="column">
+	<p class="push50"><span class="attr">id</span></p>
+	<ul>
+		<li>Any tag can be uniquely identified by <span class="attr">id</span> assigned</li>
+		<li>A tag can have only one <span class="attr">id</span> attribute (because it is unique)</li>
+		<li>The value of <span class="attr">id</span> cannot be reused within the document.</li>
+	</ul>
+	<img class="wideImage" src="../Resources/id.png" alt="id attribute example"/>
+  </div><!--column-->
+</div><!--row-->
+
+
+<a href="html_quiz.html"><img  class= "next" src="../Resources/arrowRight.png" alt="Arrow pointing right"/></a><!--link to the next section-->
+</div><!--main-->
+</body><!--BODY-->
+</html>

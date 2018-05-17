@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>HTML Tutorial</title>
+<link rel="stylesheet" type="text/css" href="../Style/tutorialWeb.css"/><!--CSS file-->
+</head>
+
+<!--BODY-->
+<body>
+<div id="main">
+
+<!--LIST OF CONTENT - NAVIGATION BAR-->
+<div id="navigation_bar">
+<div class="dropdown">
+<button class="dropbtn">HTML</button>
+<div class="dropdown-content">
+<a href="html_beforeStart.html">Before You Get Started</a>
+<a href="html_intro.html">HTML Introduction</a>
+<a href="html_nestedEl.html">Nested Elements</a>
+<a href="html_tags.html">Tags</a>
+<a href="html_attr.html">HTML Attributes</a>
+<a href="html_inline.html">Inline Tags</a>
+<a href="html_tables.html">HTML Tables</a>
+<a href="html_spChar.html">HTML Special Characters</a>
+<a href="html_grouping.html">Structural Grouping</a>
+</div><!--.dropdown-content-->
+</div><!--.dropdown-->
+
+<div class="dropdown2">
+<button class="dropbtn">CSS <i class="fa fa-caret-down"></i></button>
+<div class="dropdown-content">
+<a href="css_intro.html">CSS Introduction</a>
+<a href="css_syntax.html">CSS Syntax</a>
+<a href="css_boxModel.html"> Box Model</a>
+<a href="css_colours.html">Colours</a>
+<a href="css_backgrounds.html">Backgrounds</a>
+</div><!--.dropdown-content-->
+</div><!--.dropdown2-->
+</div><!--#navigation_bar-->
+
+<!--LIST OF CONTENT - SIDEBAR-->
+<ul id="navigation_sidebar">
+<li class="htmlcontent"><b>HTML</b></li>
+<li><a href="html_beforeStart.html">Before You Get Started</a></li>
+<li><a href="html_intro.html">HTML Introduction</a></li>
+<li><a href="html_nestedEl.html">Nested Elements</a></li>
+<li><a href="html_tags.html">Tags</a></li>
+<li><a href="html_attr.html">HTML Attributes</a></li>
+<li><a href="html_inline.html">Inline Tags</a></li>
+<li><a href="html_tables.html">HTML Tables</a></li>
+<li><a href="html_spChar.html">Special Characters</a></li>
+<li><a href="html_grouping.html">Structural Grouping</a></li>
+<li><a href="html_quiz.html">HTML Quiz</a><br/></li>
+<li class="htmlcontent"><b>CSS</b></li>
+<li><a href="css_intro.html">CSS Introduction</a></li>
+<li><a href="css_syntax.html">CSS Syntax</a></li>
+<li><a href="css_boxModel.html"> Box Model</a></li>
+<li><a href="css_colours.html">Colours</a></li>
+<li><a href="css_backgrounds.html">Backgrounds</a></li>
+</ul>
+
+
+<a href="html_attr.html"><img class= "back" src="../Resources/arrowLeft.png" alt="Arrow pointing left"/></a><!--link to the previous page-->
+
+<!--NEW TILE-->
+<h2>Inline tags</h2>
+<p>Headings, paragraphs and lists are <b>block-level elements</b> and are defined using block-level tags. <br/>However, there exists a variety of <b>inline tags</b> which are not associated with a new line. </p>
+<p>There are 2 types of inline tags: </p>
+<ul>
+<li>Logical inline tags supply additional semantic meaning within a block.</li>
+<li>Physical inline tags provide visual style.</li>
+</ul>
+<table>
+<tr><!--line 1-->
+<th rowspan="6">LOGICAL</th>
+<th>Tag</th>
+<th>Enclosed content…</th>
+<th>Visual appearance</th>
+</tr>
+<tr><!--line 2-->
+<td>&#60;em&#62;</td>
+<td>…given extra emphasis</td>
+<td><i>Italics</i></td>
+</tr>
+<tr><!--line 3-->
+<td>&#60;strong&#62;</td>
+<td>…given strong emphasis</td>
+<td><b>Bold</b></td>
+</tr>
+<tr><!--line 4-->
+<td>&#60;cite&#62;</td>
+<td>…a citation or reference</td>
+<td><i>Italics</i> + details in a title attribute</td>
+</tr>
+<tr><!--line 5-->
+<td>&#60;code&#62;</td>
+<td>…is program code</td>
+<td><code>monospace</code> font</td>
+</tr>
+<tr><!--line 6-->
+<td>&#60;abbr&#62; and &#60;acronym&#62;</td>
+<td>…is a shortened form</td>
+<td>-<br/>(requires a title attribute)</td>
+</tr>
+<tr><!--line 7-->
+<td rowspan="8" id="physical"><b>PHYSICAL</b></td>
+<td>&#60;b&#62;</td>
+<td>-</td>
+<td><b>Bold</b></td>
+</tr>
+<tr><!--line 8-->
+<td>&#60;i&#62;</td>
+<td>-</td>
+<td><i>Italics</i></td>
+</tr>
+<tr><!--line 9-->
+<td>&#60;big&#62;</td>
+<td>-</td>
+<td><big>Big</big> font size</td>
+</tr>
+<tr><!--line 10-->
+<td>&#60;small&#62;</td>
+<td>-</td>
+<td><small>Small</small> font size</td>
+</tr>
+<tr><!--line 11-->
+<td>&#60;sub&#62;</td>
+<td>-</td>
+<td><sub>Subscript</sub> Text</td>
+</tr>
+<tr><!--line 12-->
+<td>&#60;sup&#62;</td>
+<td>-</td>
+<td><sup>Superscript</sup> Text</td>
+</tr>
+<tr><!--line 13-->
+<td>&#60;u&#62;</td>
+<td>-</td>
+<td id="underline">Underline</td>
+</tr>
+<tr><!--line 14-->
+<td>&#60;s&#62;</td>
+<td>-</td>
+<td id="strikethrough">Strikethrough</td>
+</tr>
+</table>
+<br/>
+<div class="noteBox">
+<p><span class="note">Note:</span> <cite title="https://www.w3schools.com/html/html_formatting.asp">"Browsers display <span class="tag">&#60;strong&#62;</span> as <span class="tag">&#60;b&#62;</span>, and  <span class="tag">&#60;em&#62;</span> as <span class="tag">&#60;i&#62;</span>. However, there is a difference in the meaning of these tags:  <span class="tag">&#60;b&#62;</span> and  <span class="tag">&#60;i&#62;</span> defines bold and italic text, but  <span class="tag">&#60;strong&#62;</span> and  <span class="tag">&#60;em&#62;</span> means that the text is "important".”</cite></p>
+<p>Avoid deprecated physical tags as alternatives exist (CSS)!</p>
+<p><b>Inline tags</b> must be nested inside a block-level tag! </p>
+<img class="lineLong" src="../Resources/inlineTagg.png" alt="nested inline tags"/>
+</div><!--noteBox-->
+<h4>Example:</h4>
+<img class="wideImage" src="../Resources/InlineTagExample.png" alt="Example of inline tags"/>
+<p><a href="https://www.w3schools.com/html/html_formatting.asp">More examples</a></p>
+
+<a href="html_tables.html"><img  class= "next" src="../Resources/arrowRight.png" alt="Arrow pointing right"/></a><!--link to the next section-->
+
+</div><!--main-->
+</body><!--BODY-->
+</html>

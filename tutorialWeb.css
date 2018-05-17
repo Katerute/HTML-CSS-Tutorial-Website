@@ -1,0 +1,528 @@
+#main{
+	/*generate space around the element (outside of any defined borders)*/
+	margin-left: 250px;
+	margin-top:50px;
+}
+body{
+	font-family: "Palatino", "Palatino Linotype", "Hoefler Text", Times, "Times New Roman", serif;/*font stack for the text in BODY*/	
+	background-color: white;/*set the background color*/
+}
+h2,h3,h4,h5,p,li{
+	color:#363237;
+}
+/*Navigation bar*/
+#navigation_bar{
+	display:inline-block;/*display inline*/
+	/*set position to be absolute, so 'navigation' would be displayed at the top of the web page*/
+	position: absolute;
+	position: fixed;
+	top:0px;
+	right: 0px;
+
+	/*no generated space around the element*/
+	margin:0px;
+	padding:0px;
+	
+	/*full-screen width*/
+	width:100%;
+	
+	background-color: #D09683;/*set the background color*/
+	height: 50px;/*set the height for 'navigation' box*/
+}
+/*For drop menu*/
+.dropbtn {
+    background-color: #363237;/*set the background color*/
+	/*properties for text*/
+    color: white;
+    font-size: 16px;
+    border: none;
+	/*generate space around the element (inside of any defined borders)*/
+	padding: 15px;
+	padding-bottom: 16px;
+}
+
+.dropdown {
+	/*set position to be absolute, so the element would be displayed at a certain position*/
+	 position: absolute;
+	 /*generate space around the element (outside of any defined borders)*/
+	 margin-left:230px;
+   
+}
+.dropdown2 {
+	/*generate space around the element (outside of any defined borders)*/
+	margin-left:300px;
+	/*set position to be absolute, so the element would be displayed at a certain position*/   
+	position: absolute;
+}
+
+.dropdown-content {
+    display: none;/*hide till hover*/
+	position:absolute;/*set position to be absolute, so the element would be displayed at a certain position*/ 
+    background-color: #f1f1f1;/*set the background color*/
+    z-index: 1;/*ring to front*/
+}
+.dropdown-content a {
+	width:200px;
+	padding: 12px 16px;
+	/*properties for text*/
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #73605B;/*set the background color*/ 
+	color:white;
+}
+
+.dropdown:hover .dropdown-content {/*display the conten when hover*/
+    display: block;/*display in block*/
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #73605B;/*set the background color*/
+}
+
+.dropdown2:hover .dropdown-content {
+    display: block;/*display in block*/
+}
+
+.dropdown2:hover .dropbtn {
+    background-color: #73605B;/*set the background color*/
+}
+
+
+/* The sidebar menu */
+#navigation_sidebar {
+    height: 100%; /* full-height*/
+    width: 210px; /*set the width of the sidebar */
+    position: fixed; /* fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* bring to front*/
+    margin-top: 0px; /* no generated space at the top */
+    left: 0;
+    background-color: #73605B;/*set the background color*/
+    overflow-x: hidden; /* disable horizontal scroll */
+	/*generate space around the element (inside of any defined borders)*/
+	padding-left: 20px;
+    padding-top: 20px;
+	list-style-type:none;/*no bullet points*/
+}
+
+/* The sidebar menu links */
+#navigation_sidebar a {
+   margin-right:5px;
+   /*properties for text*/
+   text-decoration: none;
+   font-size: 18px;
+   color: white;
+   display: block;
+}
+#navigation_sidebar a:hover {
+    color: #363237;
+	background-color: #D09683;/*set the background color*/
+}
+
+#startPicture{
+	float:right;/*element floats to the right of its container*/
+	/*size*/
+	width:200px;
+	height:200px;
+}
+#down{
+	/*size*/
+	width:50px;
+	height:80px;
+	padding-left:350px;/*generate space around the element (inside of any defined borders)*/
+}
+#par{
+	margin-left:120px;/*generate space around the element (outside of any defined borders)*/
+}
+
+#notepadIconBlock img{
+	padding-left:10px;/*generate space around the element (inside of any defined borders)*/
+	/*size*/
+	width:60px;
+	height:60px;
+}
+#chromeIconBlock img{
+	padding-left:10px;/*generate space around the element (inside of any defined borders)*/
+	/*size*/
+	width:50px;
+	height:50px;
+}
+#chromeIconBlock{
+	margin-left:10px;
+}
+
+.column {
+    float: left;/*element floats to the left of its container*/
+    width: 45%;
+}
+.column div{
+	margin-left:40px;
+	display:inline-block;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.next{
+	float:right;
+	width:70px;
+	height:50px;
+}
+.back{
+	float:right;
+	width:70px;
+	height:50px;
+}
+
+.overlayContainer {
+	margin-top:100px;
+  position: relative;
+  width: 100%;
+}
+
+.image {
+	position:relative;
+	margin-left:20px;
+	display: block;
+	width: 100%;
+	height: auto;
+	opacity: 0.85;/*make more transparent*/
+   filter: alpha(opacity=85); /*opacity for IE8 and earlier versions*/
+	
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #D09683;/*set the background color*/
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  /*for zooming*/
+  -webkit-transform:scale(0);
+  transition: .3s ease;
+}
+
+.overlayContainer:hover .overlay {
+   /*zooming*/
+   transform: scale(1)
+}
+
+.text {
+  color: #363237;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+
+.htmlcontent{
+	color:#D09683;
+}
+#rule{
+	padding:10px;
+	margin-right:400px;
+	/*create a border*/
+	border-style:solid;
+	border-width:3px;
+	border-color:#363237;
+}
+
+/*push the content right*/
+#pushRight{
+	margin-left:180px;
+}
+.push50{
+	margin-left:50%
+}
+.push30{
+	margin-left:30%
+}
+.push10{
+	margin-left:10%
+}
+#strong{
+	margin-left:40px;
+}
+/*NOTE*/
+.note{
+	font-weight:bold;
+	color:Tomato;
+}
+#list{
+	padding-right:30px;
+	text-align:justify;
+}
+.doc{
+	font-weight:bold;/*makes text bold*/
+	color:#D71203;
+}
+.bodyWord{
+	font-weight:bold;/*makes text bold*/
+	color:orange;
+}
+.head{
+	font-weight:bold;/*makes text bold*/
+	color:blue;
+}
+.html{
+	font-weight:bold;/*makes text bold*/
+	color:green;
+}
+#structureExample{
+	width:440px;
+	height:420px;
+}
+/*Box for NOTE*/
+.noteBox{
+	border-style:solid;
+	border-width:3px;
+	border-color:Tomato;
+	text-align:center;
+}
+.noteBoxNotCentreded{
+	border-style:solid;
+	border-width:3px;
+	border-color:Tomato;
+	padding:10px;
+}
+
+.boxUnderPic{
+	padding:15px;
+	padding-left:30px;
+	padding-right:30px;
+	margin-left:10px;
+	margin-right:10px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#363237;
+	text-align:center;
+}
+/*specifies tags*/
+.tag{
+	color:#2B6FFC;
+}
+#headingList{
+	list-style-type:none;
+	margin-left:100px;
+	font-size:20px;
+}
+#headingList li{
+	color:#2B6FFC;
+}
+#ruleList{
+	list-style-type:none;
+	border-style:solid;
+	border-width:3px;
+	border-color:#363237;
+	padding:10px;
+	padding-left:30px;
+	 border-radius: 25px;
+}
+#ruleListLeft{
+	border-style:solid;
+	border-width:3px;
+	border-color:#363237;
+	padding:10px;
+	padding-left:30px;
+	 border-radius: 25px;/*makes rounded borders*/
+	 width:40%;
+}
+#tagHeading{
+	color:black;
+	margin-left:-20px;
+	font-weight:bold;
+	font-size:22px;
+}
+/*size of pictures*/
+.example{
+	width:100%;
+	height:550px;
+}
+.example2{
+	width:100%;
+	padding-left:20px;
+	padding-right:20px;
+}
+#emptyEl{
+	border-style:solid;
+	border-width:3px;
+	border-color:#363237;
+	padding:10px;
+	padding-left:100px;
+	padding-right:100px;
+	text-align:center;
+}  
+/*specifies attribute*/
+.attr{
+	font-style: italic;
+	color:red;
+}	
+#attrRule{
+	text-align:center;
+	font-size:22px;
+	border-style:solid;
+	border-width:2px;
+	border-color:Tomato;
+}	
+/*size of pictures*/
+.smallPic{
+	height:10%;
+	width:15%;
+	margin-left:10px;
+}
+.wideImage{
+	width:70%;
+	height:40%;
+	margin-left:10%;
+}	
+.bigImage{
+	width:100%;
+	margin-left:30px;
+}
+.line{
+	width:20%;
+	height:10%;
+}
+.lineLong{
+	width:40%;
+	height:20%;
+}	
+.lineVeryLong{
+	width:60%;
+	height:30%;
+	padding-left:30px;
+}  
+.shrink{
+	width:50%;
+	height:20%;
+	margin-left:10%;
+}	
+.columnPic{
+	width:50%;
+	height:20%;
+}	
+/*table*/
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}  
+table {
+    width: 100%;
+	text-align:center;
+}
+
+th {
+	background-color: #D09683;/*set the background color*/
+    height: 50px;
+}	  
+
+tr:hover {
+	background-color: #f5f5f5;/*set the background color*/
+}
+	  
+#physical{
+	background-color: #D09683;/*set the background color*/
+}	
+.smallPic{
+	width:40%;
+	height:20%;
+	margin-left:30%;
+}
+/*links*/	
+#toCSS{
+	margin-bottom:100px;
+}
+.link{
+	text-decoration:none;/*the link is not underlined*/
+	color:#363237;
+}
+#underline{
+	text-decoration: underline;/*underlined text*/
+}
+#strikethrough{
+	 text-decoration: line-through;/*	strikethroughs*/
+}
+form p{
+	font-weight: bold;
+}
+
+#aftersubmit {
+	visibility:hidden;/*not displayed*/
+	height:400px;
+	padding: 10px 20px 10px 20px;
+	width: 400px;
+	border-radius: 20px;
+	margin-left: 20px;
+	font-size: 30px;
+}
+
+#mc {
+	display: inline;
+}
+#htmlquiz {
+	margin-left: 10px;
+	background-color: #d2dee3;/*set the background color*/
+	padding: 10px 20px 10px 20px;
+	width: 80%;
+	border-radius: 20px;
+	float: left;
+}
+#textbox {
+	height: 20px;
+	font-size: 16px;
+	border-radius: 5px;/*makes rounded borders*/
+	border: none;
+	padding-left: 5px;
+}
+
+
+#button {
+	background-color: black;/*set the background color*/
+	border: none;
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	margin-top: 15px;
+}
+
+#button:hover {
+	background-color: white;/*set the background color*/
+	border: 1px solid black;
+	color: black;
+	cursor: pointer;
+
+}
+#left{
+	text-align:left;/*aligns text*/
+	margin-right:20%;
+		margin-left:20%;
+}
+/*for code*/
+.red li{
+	color:red;
+	font-family:monospace;
+}
+.red{
+	color:red;
+	font-family:monospace;
+}
+
+.blue{
+	color:blue;
+	font-family:monospace;
+}
+.horizontal{
+	width:30%;
+}

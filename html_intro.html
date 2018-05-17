@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>HTML Tutorial</title>
+<link rel="stylesheet" type="text/css" href="../Style/tutorialWeb.css"/><!--CSS file-->
+</head>
+
+<!--BODY-->
+<body>
+<div id="main">
+
+<!--LIST OF CONTENT - NAVIGATION BAR-->
+<div id="navigation_bar">
+<div class="dropdown">
+<button class="dropbtn">HTML</button>
+<div class="dropdown-content">
+<a href="html_beforeStart.html">Before You Get Started</a>
+<a href="html_intro.html">HTML Introduction</a>
+<a href="html_nestedEl.html">Nested Elements</a>
+<a href="html_tags.html">Tags</a>
+<a href="html_attr.html">HTML Attributes</a>
+<a href="html_inline.html">Inline Tags</a>
+<a href="html_tables.html">HTML Tables</a>
+<a href="html_spChar.html">HTML Special Characters</a>
+<a href="html_grouping.html">Structural Grouping</a>
+</div><!--.dropdown-content-->
+</div><!--.dropdown-->
+
+<div class="dropdown2">
+<button class="dropbtn">CSS <i class="fa fa-caret-down"></i></button>
+<div class="dropdown-content">
+<a href="css_intro.html">CSS Introduction</a>
+<a href="css_syntax.html">CSS Syntax</a>
+<a href="css_boxModel.html"> Box Model</a>
+<a href="css_colours.html">Colours</a>
+<a href="css_backgrounds.html">Backgrounds</a>
+</div><!--.dropdown-content-->
+</div><!--.dropdown2-->
+</div><!--#navigation_bar-->
+
+<!--LIST OF CONTENT - SIDEBAR-->
+<ul id="navigation_sidebar">
+<li class="htmlcontent"><b>HTML</b></li>
+<li><a href="html_beforeStart.html">Before You Get Started</a></li>
+<li><a href="html_intro.html">HTML Introduction</a></li>
+<li><a href="html_nestedEl.html">Nested Elements</a></li>
+<li><a href="html_tags.html">Tags</a></li>
+<li><a href="html_attr.html">HTML Attributes</a></li>
+<li><a href="html_inline.html">Inline Tags</a></li>
+<li><a href="html_tables.html">HTML Tables</a></li>
+<li><a href="html_spChar.html">Special Characters</a></li>
+<li><a href="html_grouping.html">Structural Grouping</a></li>
+<li><a href="html_quiz.html">HTML Quiz</a><br/></li>
+<li class="htmlcontent"><b>CSS</b></li>
+<li><a href="css_intro.html">CSS Introduction</a></li>
+<li><a href="css_syntax.html">CSS Syntax</a></li>
+<li><a href="css_boxModel.html"> Box Model</a></li>
+<li><a href="css_colours.html">Colours</a></li>
+<li><a href="css_backgrounds.html">Backgrounds</a></li>
+</ul>
+
+<a href="html_beforeStart.html"><img class= "back" src="../Resources/arrowLeft.png" alt="Arrow pointing left"/></a><!--link to the previous page-->
+
+<!--NEW TILE-->
+<h1>HTML Introduction</h1>
+<h2 id="html_intro_1">Key principles</h2>
+<p>HTML describes the structure of a web page. Therefore, HTML elements are the building blocks of the page.</p>
+<p>All HTML elements are represented by tags which specify the type of an element. </p>
+<div id="rule">
+<p>The template for a tag: <strong id="strong"><span class="tag">&#60; tagName&#62;</span>content<span class="tag">&#60;/tagName&#62;</span></strong> </p>
+<p id="pushRight">a tag name surrounded by angle brackets</p>
+</div>
+<p>Tags normally come in pairs and are called start/opening tag and end/closing tag. They are written in the same way but there is a forward slash inserted before the tag name in the closing tag <span class="tag"><strong>&#60;/tagName&#62;</strong></span>. There is a variety of tags to label different pieces of web content such as “paragraph”(<span class="tag">&#60;p&#62;</span>content<span class="tag">&#60;/p&#62;</span>) or “heading”(<span class="tag">&#60;h1&#62;</span>content<span class="tag">&#60;/h1&#62;</span>).</p>
+<div class="noteBox">
+<p><span class="note">NOTE</span> Browsers do not display tags BUT use them to determine how to display the content on the page!</p>
+</div><!--noteBox-->
+<h2 id="html_intro_2">The skeletal structure for any web page</h2>
+
+<div class="row">
+  <div class="column">
+  <div id="list">
+    <p>There are 3 basic parts of each HTML document which define a structure of a web page: </p>
+	<ul>
+	<li><span class="doc">Document type declaration</span> that helps browsers to display the web page correctly. This always comes first and appears only once. It is an instruction to the web browser about the version of HTML used to write the page. Labeled as <span class="doc">&#60;!DOCTYPE&#62;</span>. Common DOCTYPE declarations can be found <a href="https://www.w3schools.com/tags/tag_doctype.asp">here</a> (depend on the version of HTML used to write the page).	<br/> </li>
+	<li><span class="head">Head </span>contains information about the document. It always comes after the document type declaration and in a single copy. A declarative header section does not have any content but must include character set info and the title of the page (<span class="tag">&#60;title&#62;&#60;/title&#62;</span>). It can also include declarations and references for metadata (<a href="https://www.w3schools.com/tags/tag_meta.asp">&#60;meta&#62;</a>), scripts (<a href="https://www.w3schools.com/tags/tag_script.asp">&#60;script&#62;&#60;/script&#62;</a>) and style sheets (<a href="https://www.w3schools.com/tags/tag_link.asp">&#60;link&#62;</a> or <a href="https://www.w3schools.com/tags/tag_style.asp">&#60;style&#62;&#60;/style&#62;</a>). However, it is optional.
+	<br/><span class="head">&#60;head&#62;&#60;/head&#62;</span>
+	<br/></li>
+	
+	<li><span class="bodyWord">Body</span> is the actual page content which will be displayed on the web page. It appears once after <span class="head">Head</span>. <br/><span class="bodyWord">&#60;body&#62;&#60;/body&#62;</span>
+	</li>
+	</ul>
+	</div><!--list-->
+  </div><!--column-->
+  
+  <div class="column">
+     <img src="../Resources/structure.png" alt="Skeletal structure for a web page"/>
+  </div><!--column-->
+</div><!--row-->
+
+<div class="noteBox">
+<p class="note">NOTE:</p>
+
+<p> <span class="head">Head</span> and <span class="bodyWord">Body</span> blocks are contained within <span class="html">&#60;html&#62;&#60;/html&#62;</span> tags!</p>
+<p>Only the <span class="bodyWord">Body</span> section is visible in the browser!</p>
+
+</div><!--noteBox-->
+<h3>Document example</h3>
+
+
+<div class="row">
+  <div class="column">
+	<p>In text document:</p>
+	<img id="structureExample" src="../Resources/structureExample.png" alt="Web document structure example"/>
+  </div><!--column-->
+  <div class="column">
+     <p>In web browser:</p>
+<img src="../Resources/structureWebExample.png" alt="Web page structure example"/>
+  </div><!--column-->
+</div><!--row-->
+
+<a href="html_nestedEl.html"><img  class= "next" src="../Resources/arrowRight.png" alt="Arrow pointing right"/></a><!--link to the next section-->
+
+</div><!--main-->
+</body><!--BODY-->
+</html>

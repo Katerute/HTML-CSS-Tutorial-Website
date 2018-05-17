@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>HTML Tutorial</title>
+<link rel="stylesheet" type="text/css" href="../Style/tutorialWeb.css"/><!--CSS file-->
+</head>
+
+<!--BODY-->
+<body>
+<div id="main">
+
+<!--LIST OF CONTENT - NAVIGATION BAR-->
+<div id="navigation_bar">
+<div class="dropdown">
+<button class="dropbtn">HTML</button>
+<div class="dropdown-content">
+<a href="html_beforeStart.html">Before You Get Started</a>
+<a href="html_intro.html">HTML Introduction</a>
+<a href="html_nestedEl.html">Nested Elements</a>
+<a href="html_tags.html">Tags</a>
+<a href="html_attr.html">HTML Attributes</a>
+<a href="html_inline.html">Inline Tags</a>
+<a href="html_tables.html">HTML Tables</a>
+<a href="html_spChar.html">HTML Special Characters</a>
+<a href="html_grouping.html">Structural Grouping</a>
+</div><!--.dropdown-content-->
+</div><!--.dropdown-->
+
+<div class="dropdown2">
+<button class="dropbtn">CSS <i class="fa fa-caret-down"></i></button>
+<div class="dropdown-content">
+<a href="css_intro.html">CSS Introduction</a>
+<a href="css_syntax.html">CSS Syntax</a>
+<a href="css_boxModel.html"> Box Model</a>
+<a href="css_colours.html">Colours</a>
+<a href="css_backgrounds.html">Backgrounds</a>
+</div><!--.dropdown-content-->
+</div><!--.dropdown2-->
+</div><!--#navigation_bar-->
+
+<!--LIST OF CONTENT - SIDEBAR-->
+<ul id="navigation_sidebar">
+<li class="htmlcontent"><b>HTML</b></li>
+<li><a href="html_beforeStart.html">Before You Get Started</a></li>
+<li><a href="html_intro.html">HTML Introduction</a></li>
+<li><a href="html_nestedEl.html">Nested Elements</a></li>
+<li><a href="html_tags.html">Tags</a></li>
+<li><a href="html_attr.html">HTML Attributes</a></li>
+<li><a href="html_inline.html">Inline Tags</a></li>
+<li><a href="html_tables.html">HTML Tables</a></li>
+<li><a href="html_spChar.html">Special Characters</a></li>
+<li><a href="html_grouping.html">Structural Grouping</a></li>
+<li><a href="html_quiz.html">HTML Quiz</a><br/></li>
+<li class="htmlcontent"><b>CSS</b></li>
+<li><a href="css_intro.html">CSS Introduction</a></li>
+<li><a href="css_syntax.html">CSS Syntax</a></li>
+<li><a href="css_boxModel.html"> Box Model</a></li>
+<li><a href="css_colours.html">Colours</a></li>
+<li><a href="css_backgrounds.html">Backgrounds</a></li>
+</ul>
+
+<a href="html_nestedEl.html"><img class= "back" src="../Resources/arrowLeft.png" alt="Arrow pointing left"/></a><!--link to the previous page-->
+
+<!--NEW TILE-->
+<h1>Tags</h1>
+<p>HTML tags specify the type of an element and construct the content of a web page.</p>
+<h2 id="html_tags_1">The template for a tag</h2>
+<div id="rule">
+<p>The template for a tag: <strong id="strong"><span class="tag">&#60; tagName&#62;</span>content<span class="tag">&#60;/tagName&#62;</span></strong> </p>
+<p id="pushRight">a tag name surrounded by angle brackets</p>
+</div>
+<p>Tags normally come in pairs: start/opening tag and end/closing tag.<br/> But some of tags are not paired because they never enclose any content (see later).</p>
+<p>There is a variety of tags to label different pieces of web content.</p>
+<hr/>
+<h2 id="html_tags_2">Headings</h2>
+<p>Headings are the most important structural components of the page.</p>
+<p>A heading can be set to six levels, so are defined with tags which have the following template:</p>
+
+<div class="row">
+  <div class="column">
+  <ul id="headingList">
+	<li><span id="tagHeading">&#60;h + number&#62;</span></li>
+	<li>&#60;h1&#62;&#60;/h1&#62;</li>
+	<li>&#60;h2&#62;&#60;/h2&#62;</li>
+	<li>&#60;h3&#62;&#60;/h3&#62;</li>
+	<li>&#60;h4&#62;&#60;/h4&#62;</li>
+	<li>&#60;h5&#62;&#60;/h5&#62;</li>
+	<li>&#60;h6&#62;&#60;/h6&#62;</li>
+   </ul>
+  </div><!--column-->
+  
+  <div class="column">
+  <ul id="ruleList">
+	<li><span class="tag">&#60;h1&#62;</span> - the most important heading</li>
+	<li><span class="tag">&#60;h6&#62;</span> - the least important heading</li>
+	<li>There can be only one <span class="tag">&#60;h1&#62;</span> per page. Headings of other levels can appear more than once.</li>
+	<li>Levels cannot be skipped:</li>
+	<li>
+  <ul>
+	<li><span class="tag">&#60;h1&#62;</span> &rarr; <span class="tag">&#60;h2&#62;</span> &rarr; <span class="tag">&#60;h3&#62;</span>  OK</li>
+	<li><span class="tag">&#60;h1&#62;</span> &rarr; <span class="tag">&#60;h2&#62;</span> &rarr; <span class="tag">&#60;h3&#62;</span> &rarr; <span class="tag">&#60;h2&#62;</span>  OK</li>
+	<li><span class="tag">&#60;h1&#62;</span> &rarr; <span class="tag">&#60;h3&#62;</span>  X</li>
+  </ul>
+	</li>
+	<li>Use <span class="tag">&#60;h1&#62;</span>-<span class="tag">&#60;h6&#62;</span> for headings <b>ONLY</b>! Do not use them to change the size of the text or make it bold.</li>
+	</ul>
+  </div><!--column-->
+</div><!--row-->
+
+<h3>Example:</h3>
+<img src="../Resources/headingExample.png" alt="Example of using &#60;h1&#62;-&#60;h6&#62; tags"/>
+<hr/>
+<h2 id="html_tags_3">Paragraphs</h2>
+<p>Paragraphs are commonly used as basic containers to represent text in the body section. They are defined using  <span class="tag">&#60;p&#62;&#60;/p&#62;</span> tags.</p>
+<p>It is important to know that you cannot change the output adding extra spaces or lines because the browser will remove all of those when displaying the page.</p>
+<h3>Example:</h3>
+<img class ="example" src="../Resources/paragraphExample.png" alt="Example of using &#60;p&#62; tags"/>
+<p>How to break the line? One of non-paired tags will help us.</p>
+<div id="emptyEl">
+<h2>Empty HTML elements</h2>
+<p>HTML element without any content are called empty elements and do not require a closing tag. </p>
+<p>For example,    <a href="https://www.w3schools.com/tags/tag_br.asp">&#60;br/&#62;</a> inserts a line break. <br/> <a href="https://www.w3schools.com/tags/tag_hr.asp">&#60;hr/&#62;</a> is used to separate the content, defines a thematic break.</p>
+<p>As you can see such tags are “closed” in the opening tag <span class="tag">&#60;br/&#62;</span>. <br/>However, if you work with HTML5 it is not obligatory to ”close” the empty elements, they can be left as <span class="tag">&#60;br&#62;</span>.</p>
+</div><!--emptyEl-->
+<p>So, if you want a new line without starting a new paragraph use the <span class="tag">&#60;br/&#62;</span> tag.</p>
+<h3>Example:</h3>
+<img src="../Resources/brExample.png" alt="&#60;br/&#62; example"/>
+<hr/>
+<h2 id="html_tags_5">Lists</h2>
+<p>There are 2 types of lists in HTML: ordered and unordered. </p>
+<p>A bullet point list is defined with the <span class="tag">&#60;ul&#62;</span> and ordered with the <span class="tag">&#60;ol&#62;</span> tag. Both of them are followed by <span class="tag">&#60;li&#62;</span> tags for list items.</p>
+<h3>Example:</h3>
+<img src="../Resources/listExample.png" alt="Example of using HTML lists"/>
+<p>More tags will be examined in upcoming sections…</p>
+<a href="html_attr.html"><img  class= "next" src="../Resources/arrowRight.png" alt="Arrow pointing right"/></a><!--link to the next section-->
+
+</div><!--main-->
+</body><!--BODY-->
+</html>
